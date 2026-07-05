@@ -1,0 +1,5 @@
+3) CREATE VIEW vw_grupos AS
+SELECT nome,
+       descricao,
+       contato
+FROM grupo_cultural;

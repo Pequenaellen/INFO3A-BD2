@@ -1,0 +1,9 @@
+6) CREATE TRIGGER verificar_contato
+BEFORE INSERT
+ON grupo_cultural
+FOR EACH ROW
+BEGIN
+    IF NEW.contato = '' THEN
+        SET NEW.contato = 'Não informado';
+    END IF;
+END;

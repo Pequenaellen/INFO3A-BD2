@@ -1,0 +1,16 @@
+5) DELIMITER //
+
+CREATE FUNCTION quantidadeGrupos()
+RETURNS INT
+DETERMINISTIC
+BEGIN
+    DECLARE total INT;
+
+    SELECT COUNT(*)
+    INTO total
+    FROM grupo_cultural;
+
+    RETURN total;
+END //
+
+DELIMITER ;

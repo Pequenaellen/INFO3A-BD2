@@ -1,0 +1,5 @@
+1) SELECT COUNT(*) AS total_pontos
+FROM pontos_historicos;
+
+SELECT COUNT(*) AS total_enderecos
+FROM endereco;

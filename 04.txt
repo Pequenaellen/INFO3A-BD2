@@ -1,0 +1,8 @@
+4) DELIMITER //
+
+CREATE PROCEDURE listarGrupos()
+BEGIN
+    SELECT * FROM grupo_cultural;
+END //
+
+DELIMITER ;
